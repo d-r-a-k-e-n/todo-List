@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>JS</title>
+    <link rel="stylesheet" href="/css/main.css" />
+  </head>
+  <body>
+    <div class="backdrop is-hidden">
+      <div class="modal">
+        <button class="modal__btn-close modal-btn-close" type="button">
+          <svg width="24" height="24">
+            <use href="./images/icons.svg#icon-close"></use>
+          </svg>
+        </button>
+        <h2 class="modal__title">Замовити дзвінок</h2>
+        <p class="modal__text">
+          Залишіть заявку та наш спеціаліст зв'яжеться з Вами!
+        </p>
+        <form name="modal-form" autocomplete="off">
+          <div class="modal__form-field input">
+            <label class="input__label visually-hidden" for="user-name">
+              Імʼя
+            </label>
+            <input
+              class="input__control"
+              type="text"
+              name="user-name"
+              id="user-name"
+              placeholder="Імʼя"
+              required
+            />
+          </div>
+
+          <div class="modal__form-field input">
+            <label class="input__label visually-hidden" for="user-tel">
+              Телефон
+            </label>
+            <input
+              class="input__control"
+              type="tel"
+              name="user-tel"
+              id="user-tel"
+              placeholder="Телефон"
+              pattern="^\+[0-9]{12}"
+              required
+            />
+          </div>
+
+          <div class="modal__form-field input">
+            <label class="input__label visually-hidden" for="user-email">
+              Електронна пошта
+            </label>
+            <input
+              class="input__control"
+              type="email"
+              name="user-email"
+              id="user-email"
+              placeholder="Електронна пошта"
+              required
+            />
+          </div>
+
+          <button class="modal__button button" type="submit">
+            Замовити дзвінок
+          </button>
+          <p class="form-terms">
+            Натискаючи на кнопку я погоджуюсь з
+            <a class="form-terms__link" href="#">політикою конфіденційності</a>
+          </p>
+        </form>
+      </div>
+    </div>
+
+    <script src="./js/scrirt.js"></script>
+  </body>
+</html>
